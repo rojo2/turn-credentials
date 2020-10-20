@@ -1,0 +1,38 @@
+{
+  "name": "@rojo2/turn-credentials",
+  "version": "1.0.0",
+  "description": "TURN Credentials creator",
+  "main": "dist/turn.js",
+  "module": "dist/turn.esm.js",
+  "scripts": {
+    "build": "rollup -c rollup.config.js",
+    "test": "mocha --require @babel/register --require chai/register-expect src/*.spec.js"
+  },
+  "bin": {
+    "turn-credentials": "bin/cli.js"
+  },
+  "files": [
+    "bin",
+    "dist"
+  ],
+  "keywords": [
+    "TURN",
+    "credentials",
+    "WebRTC",
+    "RTC"
+  ],
+  "author": "ROJO 2 <hola@rojo2.com> (https://rojo2.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/register": "^7.12.1",
+    "chai": "^4.2.0",
+    "mocha": "^8.2.0",
+    "rollup": "^2.32.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:rojo2/turn-credentials.git"
+  }
+}
